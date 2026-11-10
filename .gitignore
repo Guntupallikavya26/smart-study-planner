@@ -1,0 +1,106 @@
+# ==============================================================================
+# SMART STUDY PLANNER - GITHUB IGNORE RULES
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# 1. Environment & Sensitive Credentials
+# ------------------------------------------------------------------------------
+.env
+.env.local
+.env.*.local
+*.env
+*.env.*
+!.env.example
+secrets.json
+*.key
+*.pem
+*.pfx
+
+# ------------------------------------------------------------------------------
+# 2. Database Files & Backups (Preserve Data Privacy)
+# ------------------------------------------------------------------------------
+*.mv.db
+*.trace.db
+*.db
+*.sqlite3
+*.sql.gz
+*.bak
+/backend/data/
+!src/data/
+
+# ------------------------------------------------------------------------------
+# 3. Node.js & React Frontend
+# ------------------------------------------------------------------------------
+node_modules/
+dist/
+dist-ssr/
+*.local
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.eslintcache
+.stylelintcache
+
+# ------------------------------------------------------------------------------
+# 4. Java & Spring Boot (Maven)
+# ------------------------------------------------------------------------------
+target/
+backend/target/
+*.class
+*.jar
+!backend/.mvn/wrapper/maven-wrapper.jar
+*.war
+*.ear
+*.nar
+.mvn/timing.properties
+.mvn/wrapper/maven-wrapper.jar.backup
+
+# ------------------------------------------------------------------------------
+# 5. Python & Machine Learning Microservice
+# ------------------------------------------------------------------------------
+__pycache__/
+*/__pycache__/
+*/*/__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+eggs/
+.eggs/
+parts/
+bin/
+var/
+*.egg-info/
+.installed.cfg
+*.egg
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ------------------------------------------------------------------------------
+# 6. IDEs & Operating System Artifacts
+# ------------------------------------------------------------------------------
+.idea/
+*.iml
+.vscode/*
+!.vscode/extensions.json
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.DS_Store
+Thumbs.db
+Desktop.ini
